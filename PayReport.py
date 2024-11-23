@@ -10,7 +10,7 @@ class PayReport:
         for caregiver in self.caregivers:
             pay = caregiver.calculate_pay()
             total_pay += pay
-            # Using string concatenation
+            # Using string concatenation to create a report
             report += caregiver.name + ": $" + str(round(pay, 2)) + "\n"
           
         report += "-" * 20 + "\n"
